@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0a0a;
+  color: #f1f1f1;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #111;
+  border-bottom: 2px solid #d4af37;
+}
+header .logo {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #d4af37;
+}
+header nav a {
+  margin: 0 10px;
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: 500;
+}
+header nav a:hover {
+  color: #d4af37;
+}
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: url('images/banner.jpg') center/cover no-repeat;
+  color: #fff;
+}
+.hero h1 span {
+  color: #d4af37;
+}
+.content, .page {
+  padding: 40px 20px;
+  text-align: center;
+}
+.content img, .page img {
+  margin-top: 20px;
+  width: 70%;
+  border-radius: 10px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #d4af37;
+  background: #111;
+  color: #aaa;
+}
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  background: #d4af37;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+}
+.btn:hover {
+  background: #b8961f;
+}
