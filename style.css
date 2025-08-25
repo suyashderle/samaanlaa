@@ -121,3 +121,13 @@ footer {
     padding: 20px 15px; /* adjusts padding for mobile screens */
   }
 }
+/* Clickable Samaanlaa logo style */
+.logo a {
+  color: #f5d28e;       /* same as header text color */
+  text-decoration: none; /* removes underline */
+  font-weight: 600;      /* bold like original */
+}
+
+.logo a:hover {
+  color: #fff;           /* optional hover effect */
+}
