@@ -1,48 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Samaanlaa - Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samaanlaa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header bar */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #2c3e50;
+      padding: 10px 20px;
+      color: white;
+      position: relative;
+    }
+
+    /* Logo in center */
+    .logo {
+      flex-grow: 1;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    /* Hamburger menu */
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+      position: absolute;
+      left: 20px;
+    }
+
+    /* Sidebar menu */
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #34495e;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+    }
+
+    .sidebar a {
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+      transition: 0.2s;
+    }
+
+    .sidebar a:hover {
+      background-color: #1abc9c;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 28px;
+      cursor: pointer;
+      color: white;
+    }
+
+    /* Content */
+    .content {
+      padding: 20px;
+    }
+
+    h2 {
+      color: #2c3e50;
+    }
+  </style>
 </head>
 <body>
-  <body>
-  <h1>Welcome to Samaanlaa</h1>
-  <p>India's Smart Aggregator for Interior and Construction Materials</p>
+  <!-- Navbar -->
+  <div class="navbar">
+    <span class="menu-icon" onclick="openMenu()">&#9776;</span>
+    <div class="logo">SAMAANLAA</div>
+  </div>
 
-  <h2>Furniture Materials</h2>
-  <ul>
-    <li><b>Plywood</b> – Strong base material used for making tables, cupboards, and beds.</li>
-    <li><b>MDF (Medium Density Fibreboard)</b> – Smooth surface, good for painted furniture and decorative panels.</li>
-    <li><b>Laminates</b> – Protective sheets available in different colours and textures for finishing.</li>
-    <li><b>Veneer</b> – Thin natural wood layer used for premium look.</li>
-    <li><b>Hardware (Hinges, Handles, Screws)</b> – Essential fittings for assembling furniture.</li>
-    <li><b>Foam & Upholstery</b> – Soft materials for sofa, chairs, and cushions.</li>
-    <li><b>Polish & Paint</b> – For finishing and protecting wood surfaces.</li>
-  </ul>
-</body>
+  <!-- Sidebar Menu -->
+  <div id="sidebar" class="sidebar">
+    <span class="close-btn" onclick="closeMenu()">&times;</span>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
 
-  <header>
-    <div class="logo">Samaanlaa</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <section class="hero">
-    <h1>Welcome to <span>Samaanlaa</span></h1>
-    <p>The Future of Material Procurement</p>
-  </section>
-  <section class="content">
-    <h2>What We Do</h2>
-    <p>Samaanlaa is a smart aggregator platform for interior and construction materials. We connect interior designers, architects, and consultants with trusted local suppliers.</p>
-    <img src="images/furniture1.jpg" alt="Furniture" />
-  </section>
-  <footer>
-    <p>© 2025 Samaanlaa. All Rights Reserved.</p>
-  </footer>
+  <!-- Page Content -->
+  <div class="content">
+    <h2 id="home">Home</h2>
+    <p>Welcome to Samaanlaa – India's Smart Aggregator for Interior and Construction Materials.</p>
+
+    <h2 id="about">About</h2>
+    <p>Samaanlaa helps you streamline your site work by providing all materials in one place with convenience and transparency.</p>
+
+    <h2 id="contact">Contact</h2>
+    <p>Email: info@samaanlaa.com<br>Phone: +91 98765 43210</p>
+  </div>
+
+  <script>
+    function openMenu() {
+      document.getElementById("sidebar").style.width = "250px";
+    }
+    function closeMenu() {
+      document.getElementById("sidebar").style.width = "0";
+    }
+  </script>
 </body>
 </html>
