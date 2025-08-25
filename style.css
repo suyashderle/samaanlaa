@@ -110,3 +110,14 @@ footer {
   background: #3e4d3a;
   color: #f5d28e;
 }
+.page {
+  max-width: 900px; /* limits the width so text isn't too stretched */
+  margin: 0 auto;   /* centers the content horizontally */
+  padding: 20px;    /* adds space inside the section */
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 20px 15px; /* adjusts padding for mobile screens */
+  }
+}
