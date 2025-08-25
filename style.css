@@ -141,3 +141,20 @@ footer a {
 footer a:hover {
   color: #fff;            /* optional hover effect */
 }
+
+/* Make body and html take full height */
+html, body {
+  height: 100%;
+}
+
+/* Main content wrapper */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Page content should expand to take available space */
+.page {
+  flex: 1;
+}
