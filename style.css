@@ -131,3 +131,13 @@ footer {
 .logo a:hover {
   color: #fff;           /* optional hover effect */
 }
+
+footer a {
+  color: #f5d28e;        /* same as header text */
+  text-decoration: none;  /* removes underline */
+  font-weight: 500;       /* optional: match nav links */
+}
+
+footer a:hover {
+  color: #fff;            /* optional hover effect */
+}
